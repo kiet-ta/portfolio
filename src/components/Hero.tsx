@@ -83,13 +83,13 @@ const Hero = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="relative max-w-6xl mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+        className="relative max-w-6xl mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
       >
         <div className="text-center lg:text-left">
           {/* Name & Badge */}
           <motion.h1
             variants={itemVariants}
-            className="inline-flex flex-col md:flex-row items-center lg:items-start gap-3 text-5xl md:text-8xl font-black mb-6 tracking-tight text-slate-900 font-mono"
+            className="inline-flex flex-col md:flex-row items-center lg:items-start gap-3 text-4xl md:text-7xl font-black mb-6 tracking-tight text-slate-900 font-mono"
           >
             <span className="relative">
               {intro.name}

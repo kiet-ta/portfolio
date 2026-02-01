@@ -82,10 +82,11 @@ export const skills = [
   { name: ".NET", category: "framework", proficiency: "advanced" },
   { name: "React", category: "framework", proficiency: "intermediate" },
   { name: "SUI", category: "blockchain", proficiency: "intermediate" },
-  { name: "Move", category: "blockchain", proficiency: "intermediate" },
+  { name: "Move", category: "language", proficiency: "intermediate" },
+  { name: "Rust", category: "language", proficiency: "intermediate" },
   { name: "IOTA", category: "blockchain", proficiency: "intermediate" },
-  { name: "Docker", category: "tool", proficiency: "intermediate" },
-  { name: "Vim", category: "tool", proficiency: "intermediate" },
+  { name: "Docker", category: "tool", proficiency: "advanced" },
+  { name: "NeoVim", category: "tool", proficiency: "intermediate" },
   { name: "Git/GitHub", category: "tool", proficiency: "advanced" }
 ];
 

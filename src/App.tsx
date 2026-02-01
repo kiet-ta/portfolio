@@ -2,7 +2,6 @@ import './App.css';
 import { Navbar, Hero, ProjectCard, ScrollToTop, Skills, Experience, Contact } from './components';
 import { projects } from './data/content';
 import { motion } from 'framer-motion';
-import archLogo from './assets/arch-logo.svg';
 
 function App() {
   return (

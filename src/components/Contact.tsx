@@ -138,12 +138,12 @@ const Contact = () => {
               </h3>
               <div className="space-y-3">
                 <motion.a
-                  href="mailto:contact@kiet-ta.dev"
+                  href="mailto:trananhkiet21082005@gmail.com"
                   whileHover={{ scale: 1.1 }}
                   className="flex items-center gap-3 text-slate-600 hover:text-cyan-600 transition-colors group focus:ring-2 focus:ring-cyan-600/40 rounded"
                 >
                   <Mail className="w-5 h-5 group-hover:scale-105 transition-transform" />
-                  contact@kiet-ta.dev
+                  trananhkiet21082005@gmail.com
                 </motion.a>
               </div>
             </div>

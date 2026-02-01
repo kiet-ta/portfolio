@@ -285,7 +285,7 @@ This project is open source and available under the MIT License.
 
 ## 📧 Contact
 
-- **Email**: contact@kiet-ta.dev
+- **Email**: trananhkiet21082005@gmail.com
 - **GitHub**: [@kiet-tA](https://github.com/kiet-ta)
 - **LinkedIn**: [Kiet TA](https://linkedin.com/in/kiet-ta)
 
