@@ -1,5 +1,12 @@
 import './App.css';
-import { Navbar, Hero, ProjectCard, ScrollToTop, Skills, Experience, Contact } from './components';
+import { Navbar, Hero, ScrollToTop, Loading } from './components';
+import React, { Suspense } from 'react';
+
+const ProjectCard = React.lazy(() => import('./components/ProjectCard'));
+const Skills = React.lazy(() => import('./components/Skills'));
+const Experience = React.lazy(() => import('./components/Experience'));
+const Contact = React.lazy(() => import('./components/Contact'));
+
 import { projects } from './data/content';
 import { motion } from 'framer-motion';
 
@@ -47,11 +54,13 @@ function App() {
 
             {/* Featured Projects */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-              {projects
-                .filter((p) => p.featured)
-                .map((project, index) => (
-                  <ProjectCard key={project.id} project={project} index={index} />
-                ))}
+              <Suspense fallback={<Loading />}>
+                {projects
+                  .filter((p) => p.featured)
+                  .map((project, index) => (
+                    <ProjectCard key={project.id} project={project} index={index} />
+                  ))}
+              </Suspense>
             </div>
 
             {/* Other Projects */}
@@ -66,15 +75,17 @@ function App() {
                 Other Projects
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {projects
-                  .filter((p) => !p.featured)
-                  .map((project, index) => (
-                    <ProjectCard
-                      key={project.id}
-                      project={project}
-                      index={index + projects.filter((p) => p.featured).length}
-                    />
-                  ))}
+                <Suspense fallback={<Loading />}>
+                  {projects
+                    .filter((p) => !p.featured)
+                    .map((project, index) => (
+                      <ProjectCard
+                        key={project.id}
+                        project={project}
+                        index={index + projects.filter((p) => p.featured).length}
+                      />
+                    ))}
+                </Suspense>
               </div>
             </motion.div>
 
@@ -113,17 +124,23 @@ function App() {
 
         {/* Skills Section */}
         <section id="skills">
-          <Skills />
+          <Suspense fallback={<Loading />}>
+            <Skills />
+          </Suspense>
         </section>
 
         {/* Experience Section */}
         <section id="experience">
-          <Experience />
+          <Suspense fallback={<Loading />}>
+            <Experience />
+          </Suspense>
         </section>
 
         {/* Contact Section */}
         <section id="contact">
-          <Contact />
+          <Suspense fallback={<Loading />}>
+            <Contact />
+          </Suspense>
         </section>
 
         <ScrollToTop />
