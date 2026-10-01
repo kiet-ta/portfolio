@@ -56,10 +56,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Online Library Management System",
-    description: "Borrow Books Online. Anytime, Anywhere. A comprehensive system for managing library resources and user borrowing.",
-    techStack: ["Java", "Spring Boot", "MySQL"],
-    github: "https://github.com/kiet-ta/online-library-management-system",
+    title: "KusShoes — 3D Sneaker Platform",
+    description: "3D sneaker digitization and customization ecosystem integrating mobile photogrammetry scanning with a real-time WebGL desktop studio.",
+    techStack: ["React", "TypeScript", "Three.js", "Node.js", "WebGL"],
+    link: "https://kusshoes.kietta.me",
+    github: "https://github.com/EXE-CAPSTONE-TEAM/KusShoes",
     featured: false
   },
   {
